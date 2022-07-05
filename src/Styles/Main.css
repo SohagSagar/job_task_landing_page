@@ -1,4 +1,7 @@
 
+
+/* for mobile devices */
+
 @media (max-width:688px) {
     .left-content{
         flex-direction: column;
@@ -14,3 +17,14 @@
         padding-right: 0;
     }
 }
+
+   /* for tablet devices */
+
+   @media only screen and (min-width:668px) and (max-width:992px) {
+    .left-content>div:nth-child(1){
+        text-align: justify;
+    }
+    .right-content{
+        min-width: 20rem;
+    }
+   }

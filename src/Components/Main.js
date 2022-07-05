@@ -91,13 +91,13 @@ const Main = () => {
 
             {/* contents of the right side */}
 
-            <div className=' flex gap-1 flex-end'>
+            <div className=' flex gap-1 right-content '>
 
                 <div>
                     <img className='w-[250px] h-[300px]' src={img1} alt="" srcset="" />
                 </div>
 
-                <div className='flex flex-col gap-1 jus'>
+                <div className='flex flex-col gap-1 '>
                     <img className='w-[250px] h-[148px] rounded-tr-lg' src={img2} alt="" srcset="" />
                     <img className='w-[250px] h-[148px]' src={img3} alt="" srcset="" />
                 </div>
