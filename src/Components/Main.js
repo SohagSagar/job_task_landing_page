@@ -4,6 +4,7 @@ import { RiShareForwardLine } from 'react-icons/ri';
 import img1 from '../../src/images/image_1.png';
 import img2 from '../../src/images/image_2.png';
 import img3 from '../../src/images/image_3.png';
+import '../Styles/Main.css';
 
 
 const Main = () => {
@@ -17,10 +18,10 @@ const Main = () => {
     // }, [])
 
     return (
-        <div className='mt-10 flex justify-center'>
+        <div className='mt-10 flex justify-center left-content'>
             {/* contents of the left side */}
 
-            <div className='flex-1 pr-10'>
+            <div className='lg:flex-1 pr-10'>
                 <p className='font-semibold'>In this 5 days class we will explore artists Monet, Matisse, Van Gogh, among others and then recreate painting using crayon and watercolor. Students will have fun learning about the artists & creating their own art inspired by their work.</p>
 
                 {/* avatar */}
@@ -34,7 +35,7 @@ const Main = () => {
                 {/* ratings and comments*/}
                 <div className='flex justify-start items-center'>
                     {/* ratings */}
-                    <div className='text-yellow-400 text-xl flex mt-3'>
+                    <div className='text-yellow-400 lg:text-xl text-lg flex mt-3'>
                         <AiFillStar />
                         <AiFillStar />
                         <AiFillStar />
@@ -50,7 +51,7 @@ const Main = () => {
 
                 <div className='flex justify-start items-center leading-loose'>
                     {/* ratings */}
-                    <div className='text-yellow-400 text-xl flex mt-3'>
+                    <div className='text-yellow-400 lg:text-xl text-lg flex mt-3'>
                         <AiFillStar />
                         <AiFillStar />
                         <AiFillStar />
@@ -71,14 +72,14 @@ const Main = () => {
 
                 <div className='py-5 flex items-center'>
                     <div>
-                        <button class="btn rounded-full normal-case  btn-sm px-6 bg-primary mr-10">See Class Schedule <AiOutlineRight /></button>
+                        <button class="btn rounded-full normal-case  btn-sm lg:px-6 bg-primary lg:mr-10 mr-5">See Class Schedule <AiOutlineRight /></button>
                     </div>
 
-                    <div className='text-primary mr-10'>
+                    <div className='text-primary lg:mr-10 mr-5'>
                         <p><AiOutlineHeart className='inline' /> <span className='font-semibold'>Save</span></p>
                     </div>
 
-                    <div className='text-primary'>
+                    <div className='text-primary '>
                         <p><RiShareForwardLine className='inline' /> <span className='font-semibold'>Share</span></p>
                     </div>
 

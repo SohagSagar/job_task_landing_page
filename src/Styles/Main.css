@@ -1,0 +1,16 @@
+
+@media (max-width:688px) {
+    .left-content{
+        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+    .left-content>div>p{
+        margin-top: 10px;
+        width: 100%;
+        text-align: justify;
+       
+    }
+    .left-content>div{
+        padding-right: 0;
+    }
+}
