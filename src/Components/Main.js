@@ -1,14 +1,27 @@
-import React from 'react';
-import { AiFillStar,AiOutlineRight,AiOutlineHeart } from 'react-icons/ai';
+import React, { useEffect, useState } from 'react';
+import { AiFillStar, AiOutlineRight, AiOutlineHeart } from 'react-icons/ai';
 import { RiShareForwardLine } from 'react-icons/ri';
+import img1 from '../../src/images/image_1.png';
+import img2 from '../../src/images/image_2.png';
+import img3 from '../../src/images/image_3.png';
 
 
 const Main = () => {
-    return (
-        <div className='mt-10 flex'>
+    // const [images, setImages] = useState([]);
+    // const { image_1,image_2,image_3} = images;
 
-            <div className='flex-1'>
-                <p>In this 5 days class we will explore artists Monet, Matisse, Van Gogh, among others and then recreate painting using crayon and watercolor. Students will have fun learning about the artists & creating their own art inspired by their work.</p>
+    // useEffect(() => {
+    //     fetch('data.json')
+    //         .then(res => res.json())
+    //         .then(data => setImages(data))
+    // }, [])
+
+    return (
+        <div className='mt-10 flex justify-center'>
+            {/* contents of the left side */}
+
+            <div className='flex-1 pr-10'>
+                <p className='font-semibold'>In this 5 days class we will explore artists Monet, Matisse, Van Gogh, among others and then recreate painting using crayon and watercolor. Students will have fun learning about the artists & creating their own art inspired by their work.</p>
 
                 {/* avatar */}
                 <div className='flex justify-start items-center mt-5'>
@@ -58,24 +71,35 @@ const Main = () => {
 
                 <div className='py-5 flex items-center'>
                     <div>
-                        <button class="btn rounded-full normal-case  btn-sm px-6 bg-primary mr-10">See Class Schedule <AiOutlineRight/></button>
+                        <button class="btn rounded-full normal-case  btn-sm px-6 bg-primary mr-10">See Class Schedule <AiOutlineRight /></button>
                     </div>
 
                     <div className='text-primary mr-10'>
-                        <p><AiOutlineHeart className='inline'/> <span className='font-semibold'>Save</span></p>
+                        <p><AiOutlineHeart className='inline' /> <span className='font-semibold'>Save</span></p>
                     </div>
 
                     <div className='text-primary'>
-                        <p><RiShareForwardLine className='inline'/> <span className='font-semibold'>Share</span></p>
+                        <p><RiShareForwardLine className='inline' /> <span className='font-semibold'>Share</span></p>
                     </div>
 
-                    
+
                 </div>
 
             </div>
 
 
-            <div className='flex-1'>
+            {/* contents of the right side */}
+
+            <div className=' flex gap-1 flex-end'>
+
+                <div>
+                    <img className='w-[250px] h-[300px]' src={img1} alt="" srcset="" />
+                </div>
+
+                <div className='flex flex-col gap-1 jus'>
+                    <img className='w-[250px] h-[148px] rounded-tr-lg' src={img2} alt="" srcset="" />
+                    <img className='w-[250px] h-[148px]' src={img3} alt="" srcset="" />
+                </div>
 
             </div>
 
@@ -84,3 +108,9 @@ const Main = () => {
 };
 
 export default Main;
+
+
+/**
+ * 
+ * 
+ */
