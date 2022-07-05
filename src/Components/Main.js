@@ -1,32 +1,37 @@
 import React, { useEffect, useState } from 'react';
 import { AiFillStar, AiOutlineRight, AiOutlineHeart } from 'react-icons/ai';
 import { RiShareForwardLine } from 'react-icons/ri';
-import img1 from '../../src/images/image_1.png';
-import img2 from '../../src/images/image_2.png';
-import img3 from '../../src/images/image_3.png';
+
 import '../Styles/Main.css';
 
 
 const Main = () => {
-    // const [images, setImages] = useState([]);
-    // const { image_1,image_2,image_3} = images;
+    const [images, setImages] = useState([]);
 
-    // useEffect(() => {
-    //     fetch('data.json')
-    //         .then(res => res.json())
-    //         .then(data => setImages(data))
-    // }, [])
+    const img1=images[0]?.image_1;
+    const img2=images[1]?.image_2;
+    const img3=images[2]?.image_3;
+
+    useEffect(() => {
+        fetch('data.json')
+            .then(res => res.json())
+            .then(data => setImages(data))
+    }, [])
 
     return (
         <div className='mt-10 flex justify-center left-content'>
             {/* contents of the left side */}
+
+            {
+                images.length
+            }
 
             <div className='lg:flex-1 pr-10'>
                 <p className='font-semibold'>In this 5 days class we will explore artists Monet, Matisse, Van Gogh, among others and then recreate painting using crayon and watercolor. Students will have fun learning about the artists & creating their own art inspired by their work.</p>
 
                 {/* avatar */}
                 <div className='flex justify-start items-center mt-5'>
-                    <div class="avatar w-6  ">
+                    <div className="avatar w-6  ">
                         <img className='rounded-full' src="https://placeimg.com/192/192/people" alt='avatar' />
                     </div>
                     <p className='text text-primary ml-2 font-semibold'>Kimberly R Moseler</p>
@@ -72,7 +77,7 @@ const Main = () => {
 
                 <div className='py-5 flex items-center'>
                     <div>
-                        <button class="btn rounded-full normal-case  btn-sm lg:px-6 bg-primary lg:mr-10 mr-5">See Class Schedule <AiOutlineRight /></button>
+                        <button className="btn rounded-full normal-case  btn-sm lg:px-6 bg-primary lg:mr-10 mr-5">See Class Schedule <AiOutlineRight /></button>
                     </div>
 
                     <div className='text-primary lg:mr-10 mr-5'>
@@ -94,12 +99,12 @@ const Main = () => {
             <div className=' flex gap-1 right-content '>
 
                 <div>
-                    <img className='w-[250px] h-[300px]' src={img1} alt="" srcset="" />
+                    <img className='w-[250px] h-[300px]' src={img1} alt="" srcSet="" />
                 </div>
 
                 <div className='flex flex-col gap-1 '>
-                    <img className='w-[250px] h-[148px] rounded-tr-lg' src={img2} alt="" srcset="" />
-                    <img className='w-[250px] h-[148px]' src={img3} alt="" srcset="" />
+                    <img className='w-[250px] h-[148px] rounded-tr-lg' src={img2} alt="" srcSet="" />
+                    <img className='w-[250px] h-[148px]' src={img3} alt="" srcSet="" />
                 </div>
 
             </div>
