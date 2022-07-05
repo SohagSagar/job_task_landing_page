@@ -1,7 +1,7 @@
 
 # Job task:
 ## Task Name: Landing Page
-## Live Link: 
+## Live Link: https://job-task-landing-page-fvs2dp38r-sohagsagar.vercel.app/
 
 # Features:
 - Mobile responsive
