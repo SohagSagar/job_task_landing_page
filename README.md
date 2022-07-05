@@ -1,3 +1,14 @@
+
+# Job task:
+## Task Name: Landing Page
+## Live Link: 
+
+# Features:
+- Mobile responsive
+- Tablet Responsive
+- Desktop Responsive
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
