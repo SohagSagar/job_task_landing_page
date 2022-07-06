@@ -76,11 +76,11 @@ const Main = () => {
                         <button className="btn rounded-full normal-case  btn-sm lg:px-6 bg-primary lg:mr-10 mr-5">See Class Schedule <AiOutlineRight /></button>
                     </div>
 
-                    <div className='text-primary lg:mr-10 mr-5'>
+                    <div className='text-primary lg:mr-10 mr-5 cursor-pointer'>
                         <p><AiOutlineHeart className='inline' /> <span className='font-semibold'>Save</span></p>
                     </div>
 
-                    <div className='text-primary '>
+                    <div className='text-primary cursor-pointer'>
                         <p><RiShareForwardLine className='inline' /> <span className='font-semibold'>Share</span></p>
                     </div>
 
