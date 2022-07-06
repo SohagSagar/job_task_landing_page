@@ -22,10 +22,6 @@ const Main = () => {
         <div className='mt-10 flex justify-center left-content'>
             {/* contents of the left side */}
 
-            {
-                images.length
-            }
-
             <div className='lg:flex-1 pr-10'>
                 <p className='font-semibold'>In this 5 days class we will explore artists Monet, Matisse, Van Gogh, among others and then recreate painting using crayon and watercolor. Students will have fun learning about the artists & creating their own art inspired by their work.</p>
 
@@ -114,9 +110,3 @@ const Main = () => {
 };
 
 export default Main;
-
-
-/**
- * 
- * 
- */
